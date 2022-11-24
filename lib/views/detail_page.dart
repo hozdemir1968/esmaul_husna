@@ -8,6 +8,8 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
+    //double height = MediaQuery.of(context).size.height;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Esma-ul Husna'),
@@ -29,7 +31,7 @@ class DetailPage extends StatelessWidget {
               const SizedBox(height: 15),
               Text(
                 esmaModel!.detay,
-                style: const TextStyle(fontSize: 18),
+                style: const TextStyle(fontSize: 17),
               ),
             ],
           ),

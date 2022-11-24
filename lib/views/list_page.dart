@@ -29,6 +29,9 @@ class _ListPageState extends State<ListPage> {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    //double height = MediaQuery.of(context).size.height;
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -53,8 +56,8 @@ class _ListPageState extends State<ListPage> {
                   Text(esmaList[index].id.toString()),
                   Image.memory(
                     esmaList[index].resim,
-                    width: 100,
-                    height: 100,
+                    width: width / 4,
+                    height: width / 4,
                   ),
                   Text(esmaList[index].isim),
                   const SizedBox(height: 10),
